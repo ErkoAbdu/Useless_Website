@@ -1,0 +1,16 @@
+.shrek__main_header {
+  display: none;
+}
+
+.shrek__yes_image {
+  display: none;
+}
+.shrek__no_image {
+  display: none;
+}
+
+.btn__no {
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
