@@ -14,3 +14,6 @@
   width: 100px;
   height: auto;
 }
+.shrek__no_timeout {
+  display: none;
+}
