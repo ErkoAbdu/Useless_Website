@@ -1,18 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+body {
+  font-family: "Madimi One", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
 .shrek__main_header {
   display: none;
 }
-
+.shrek__main_container {
+  display: flex;
+  justify-content: center;
+}
 .shrek__yes_image {
   display: none;
+}
+.shrek__main_heartImage {
+  position: absolute;
 }
 .shrek__no_image {
   display: none;
 }
-
+.shrek__btn_container {
+  display: flex;
+  justify-content: center;
+}
 .btn__no {
   position: absolute;
   width: 100px;
   height: auto;
+  font-family: "Madimi One", sans-serif;
+}
+.btn__yes {
+  font-family: "Madimi One", sans-serif;
 }
 .shrek__no_timeout {
   display: none;

@@ -7,7 +7,9 @@ window.onload = function () {
   let yesImage = document.querySelector(".shrek__yes_image");
   let timeoutHeader = document.querySelector(".shrek__no_timeout");
   let timeoutImage = document.querySelector(".shrek__no_image");
-  let fiveMinImage = document.querySelector(".shrek__no_image");
+  let mainBody = document.querySelector(".body");
+
+  let audio = new Audio("music/Careless_Whisper.mp3");
 
   let spaceWidth;
   let spaceHeight;
@@ -40,7 +42,14 @@ window.onload = function () {
     btn_no.addEventListener("mouseover", moveBtn);
   }
 
-  //setTimeout(wasteTime, 300000);
+  mainBody.onmouseover = function () {
+    audio.play();
+  };
+
+  // 300000 is 5 minutes
+  mainBody.onmosueover = function () {
+    setTimeout(wasteTime, 300000);
+  };
   btn_yes.addEventListener("click", clickYes);
   initBtn();
 };
