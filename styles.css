@@ -22,11 +22,16 @@ header {
 .shrek__no_image {
   display: none;
 }
-.shrek__btn_container {
+.shrek__btn {
   display: flex;
   justify-content: center;
 }
 .btn__no {
+  font-family: "Madimi One", sans-serif;
+  width: 100px;
+  height: auto;
+}
+.btn__no_new {
   position: absolute;
   width: 100px;
   height: auto;
@@ -34,7 +39,20 @@ header {
 }
 .btn__yes {
   font-family: "Madimi One", sans-serif;
+  width: 100px;
+  height: auto;
 }
-.shrek__no_timeout {
+.shrek__no_header {
   display: none;
+}
+.shrek__btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.shrek__no_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

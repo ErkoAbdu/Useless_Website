@@ -5,7 +5,7 @@ window.onload = function () {
   let mainHeader = document.querySelector(".shrek__main_header");
   let mainImage = document.querySelector(".shrek__main_image");
   let yesImage = document.querySelector(".shrek__yes_image");
-  let timeoutHeader = document.querySelector(".shrek__no_timeout");
+  let timeoutHeader = document.querySelector(".shrek__no_header");
   let timeoutImage = document.querySelector(".shrek__no_image");
   let mainBody = document.querySelector(".body");
 
@@ -39,17 +39,18 @@ window.onload = function () {
     spaceWidth = window.innerHeight - btn_no.offsetHeight;
     spaceHeight = window.innerWidth - btn_no.offsetWidth;
 
-    btn_no.addEventListener("mouseover", moveBtn);
+    btn_no.onmouseover = function () {
+      btn_no.classList.add("btn__no_new");
+      moveBtn();
+    };
   }
 
+  // 300000 is 5 minutes
   mainBody.onmouseover = function () {
+    setTimeout(wasteTime, 2000);
     audio.play();
   };
 
-  // 300000 is 5 minutes
-  mainBody.onmosueover = function () {
-    setTimeout(wasteTime, 300000);
-  };
   btn_yes.addEventListener("click", clickYes);
   initBtn();
 };
