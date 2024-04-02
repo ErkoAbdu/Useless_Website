@@ -42,14 +42,16 @@ window.onload = function () {
     btn_no.onmouseover = function () {
       btn_no.classList.add("btn__no_new");
       moveBtn();
+      setTimeout(wasteTime, 300000);
+      audio.play();
     };
   }
 
   // 300000 is 5 minutes
-  mainBody.onmouseover = function () {
-    setTimeout(wasteTime, 2000);
-    audio.play();
-  };
+  // mainBody.onmouseover = function () {
+  //   setTimeout(wasteTime, 300000);
+  //   audio.play();
+  // };
 
   btn_yes.addEventListener("click", clickYes);
   initBtn();

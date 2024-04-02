@@ -6,8 +6,13 @@ header {
   display: flex;
   justify-content: center;
 }
+.header__title {
+  color: #fd0d9d;
+  text-wrap: wrap;
+}
 .shrek__main_header {
   display: none;
+  color: #fd0d9d;
 }
 .shrek__main_container {
   display: flex;
@@ -28,22 +33,56 @@ header {
 }
 .btn__no {
   font-family: "Madimi One", sans-serif;
-  width: 100px;
-  height: auto;
+  position: relative;
+  background: #ff8bd1;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
 }
-.btn__no_new {
-  position: absolute;
-  width: 100px;
-  height: auto;
+.btn__no_span {
   font-family: "Madimi One", sans-serif;
+  display: block;
+  padding: 15px 45px;
+  border-radius: 15px;
+  background: #fd0d9d;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  transform: translateY(-6px);
+  transition: transform ease 0.1s;
+}
+.btn__no:active .btn__no_span {
+  transform: translateY(-2px);
 }
 .btn__yes {
   font-family: "Madimi One", sans-serif;
-  width: 100px;
-  height: auto;
+  position: relative;
+  background: #ff8bd1;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  margin-right: 100px;
+}
+.btn__yes_span {
+  font-family: "Madimi One", sans-serif;
+  display: block;
+  padding: 15px 45px;
+  border-radius: 15px;
+  background: #fd0d9d;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  transform: translateY(-6px);
+  transition: transform ease 0.1s;
+}
+.btn__yes:active .btn__yes_span {
+  transform: translateY(-2px);
 }
 .shrek__no_header {
   display: none;
+  color: #fd0d9d;
 }
 .shrek__btn_container {
   display: flex;
