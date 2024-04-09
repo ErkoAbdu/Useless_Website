@@ -33,7 +33,7 @@ header {
 }
 .btn__no {
   font-family: "Madimi One", sans-serif;
-  position: relative;
+  position: absolute;
   background: #ff8bd1;
   border-radius: 15px;
   border: none;
@@ -63,7 +63,7 @@ header {
   border: none;
   cursor: pointer;
   padding: 0px;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 .btn__yes_span {
   font-family: "Madimi One", sans-serif;

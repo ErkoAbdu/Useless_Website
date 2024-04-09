@@ -14,6 +14,8 @@ window.onload = function () {
   let spaceWidth;
   let spaceHeight;
 
+  btn_no.style.marginLeft = "200px";
+
   function wasteTime() {
     header.style.display = "none";
     mainHeader.style.display = "none";
@@ -40,6 +42,7 @@ window.onload = function () {
     spaceHeight = window.innerWidth - btn_no.offsetWidth;
 
     btn_no.onmouseover = function () {
+      btn_no.style.marginLeft = "0px";
       btn_no.classList.add("btn__no_new");
       moveBtn();
       setTimeout(wasteTime, 300000);
