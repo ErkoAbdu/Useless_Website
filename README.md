@@ -12,4 +12,4 @@ This project uses the following technologies:
 - Javascript
 
 ## Deployed Website
-This project is not yet deployed and is currently being worked on...
+[Come waste some time!](https://erkoabdu.github.io/Useless_Website/)
